@@ -4,12 +4,12 @@ terraform {
   backend "gcs" {
     bucket = "${var.project_id}-gke-terraform_state"
   }
-  
+
   required_providers {
     google = {
         source = "hashicorp/google"
         version = ">= 5.7.0"
     }
   }
-  required_version = "~> 0.14"
+  required_version = ">= 0.14"
 }
