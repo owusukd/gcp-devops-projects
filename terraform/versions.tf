@@ -2,7 +2,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "${var.project_id}-gke-terraform_state"
+    bucket = "deft-observer-410308-gke-terraform_state"
   }
 
   required_providers {
