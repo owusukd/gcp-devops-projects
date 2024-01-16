@@ -5,7 +5,7 @@
 
 gcloud storage buckets create gs://deft-observer-410308-gke-terraform_state \
   --project=deft-observer-410308 \
-  --impersonate-sservice-account=terraform-automation@deft-observer-410308.iam.gserviceaccount.com \
+  --impersonate-service-account=terraform-automation@deft-observer-410308.iam.gserviceaccount.com \
   --default-storage-class=STANDARD \
   --location=us \
   --pap \
